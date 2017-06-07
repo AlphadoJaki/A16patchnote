@@ -1,0 +1,728 @@
+A16 Early Streaming & Release Notes 06.06.17
+Hey Survivalists,
+Here are the release notes for the upcoming Alpha 16 release. We know you folks like to read them beforehand so we’re releasing them early. In the meantime, you can watch our Streaming Partners play it Now!
+
+They will be giving away keys and you may even see a developer or two show up.
+
+Steaming Partners
+
+Alpha 16 Official Release Notes!
+
+This update is the most ambitious update for us since Alpha 1 and by far has the largest framework changes we’ve ever done. And to top that off it’s the biggest content drop we’ve ever done. In fact it was 88 pages of release notes that had to be condensed to what you see below. So without further ado, Let’s get ready to rumble!
+
+Distant Location Rendering System
+We’ve added a new distant location rendering system which renders low-polygon versions of locations in Navezgane and Random Gen worlds over a kilometer away. The system creates models of locations above a certain mass and height.
+
+New Locations
+We’ve have embellished many old locations with new loot and some custom painting. Too many to mention. We’ve also unlocked a new city in the south east Navezgane desert we call Departure. It’s the largest city so far. We have added over 30 new locations to the game including:
+
+4 new skyscrapers have been added to the game. We’re calling these mega locations vertical dungeons because they play like a traditional game with a lot of thought put into the path, enemy spawning, surprises, even secrets.
+3 fast-food restaurants (1 in Navezgane, all 3 in RG)
+6 new modern houses (3 in Navezgane all in RG)
+Daycare (Both)
+Private School (RG only)
+Laundromat (Navezgane and RG)
+Hair Salon (Navezgane and RG)
+2 fire stations (1 Navezgane, both RG)
+2 Post Offices (1 Navezgane, both RG)
+2 Court Houses (1 Navezgane, both RG)
+2 Old business strips (Navezgane and RG)
+4 new trailer lots (RG only)
+Pawn Shop (Navezgane and RG)
+Navezgane Hospital and Football Stadium (added to RG)
+New Enemy Spawning and Gamestages
+Sleeper Spawning – We’ve gutted the old static spawn system and added a new sleeper spawning system that embeds trigger volumes into locations which are set up by designers.
+
+We’ve added sleeper volumes and spawn points to every location in the game.
+Every location has unique spawning appropriate to the location or the area within a location. F.E. a maintenance area will spawn utility worker zombies and an office might spawn businessmen zombies
+The amount of zombies spawned at a volume is determined by the spawn definition set by the designer and the definition set in the gamestages.xml regardless of the number of spawn points.
+The type of zombies that spawn are determined by the spawn definition it’s set to and the parties game stage. The game will challenge you regardless of your level.
+Zombies will spawn in different locations within a pois every play through for a new experience every time.
+Zombies at locations are persistent meaning if you entered an area killed 1 of 5 guys and returned you would find the same 4 games alive.
+Zombies will respawn in their volume if the volume has never been cleared or nobody has visited it in 5 days
+Sleeper zombies have a chance to be a decoy meaning they are already dead. We added this so we could remove the old corpse loot block. Note: you have to damage them first before you can loot them.
+Decoy zombies have a chance to not be dead so you can be surprised sometimes
+Screamer Hordes
+We’ve changed screamer hordes to use gamestages now so they will be dynamically set to the offending parties game stage
+
+Game Stage Improvements
+We’ve made many changes to make the challenge the advanced players including:
+
+We’ve added feral and radiated zombies to the upper game stages to increase the longer game challenges
+7 day horde stages use a larger pool of zombie types, 15 at gamestage 435+
+Zombies killed by playerdeath will be added back to the pool
+We’ve added a new menu and server config game option to set the number of  zombies per player on Blood moon hordes. It defaults to 8 but can be set to 4, 8, 12, 16, 32 and 64 or any number for server admins. Game-stages are still determined by your party.
+With the addition of blood-moon count we changed the Enemy Spawning game option to ON/Off as blood moon count and sleepers control the other spawning system counts
+Electricity
+We’ve added a complete functional electricity system with a wiring tool, power sources, lights, switches, triggers, traps and more. These items are gated by perks, loot found and trader only items you can buy. They include:
+
+Wire Tool – Use a wire tool to wire electrical components. Focus on any electrical component and use the secondary action to add a wire to a parent and once again to complete the connection to a child component. Focus on any electrical component and use the primary action to remove or cut that components wire to its parent component. With the wire tool equipped you can see many useful things including: a components power usage and power status, the flow of power from parent to its child component and the aiming of objects with motion sensing.
+Generator Bank – The Generator Bank allows you to power your electrical components. It requires at least one small engine, expandable up to six. The maximum energy output is determined by the number of small engines installed and their quality. The generator bank uses gas for fuel which can be found in loot and purchased at traders or crafted at chemical stations and campfires.
+Solar Bank – The Solar Bank allows you to power your electrical components. It requires at least one solar cell, expandable up to six. The maximum energy output is determined by the number of solar cells installed and their quality. Solar banks produce power during the day when in direct sunlight. Solar Banks and cells can be purchased from traders or found in rare loot.
+Battery Bank – The Battery Bank allows you to power your electrical components. It requires at least one battery, expandable up to six. The maximum energy output is determined by the number of batteries installed and their quality. An externally powered and turned on Battery Bank will recharge its batteries. If there are no batteries installed it acts as a relay pushing power down line.
+Electric Wire Relay –  The Electric wire relay allows extending your electrical network further with a small cost to power.
+Switch – The Switch allows pausing the flow of power to children components.
+Pressure Plate – The Pressure Plate triggers the flow of power to children components when stepped on.
+Motion Sensor – The Motion Sensor triggers the flow of power to children components when a player or zed is in its view.
+Trip Wire Post – The Trip Wire Post triggers the flow of power to children components when a player or zed moves between two connected posts.
+Electric Timer Relay – The Electric Timer Relays allows the flow of power to children components during a specified time period in 30 minute increments.
+Blade Trap – The Blade trap has three spinning blades that chops players and zeds alike. It does not discriminate.
+Electric Fence Post – The Electric Fence Post shocks players and zeds who move between two connected posts.
+Dart Trap – The Dart trap launches metal darts when powered.
+Auto Turret – The Auto Turret senses targets in its view and fires 9mm rounds at them.
+Shotgun Turret – The Shotgun Turret senses targets in its view and fires shotgun shells at them.
+Speaker – The speaker plays an alarm sound when powered.
+Lights – There are many lights that the player can now craft to illuminate their forts.
+Spotlight – The player crafted Spotlight has changed to require power but can now be aimed be where light is needed.
+Random Gen Beta Version
+We’ve greatly improved Random Gen with many improvements and additions including:
+
+POIs
+New RG Distant POIs
+Over 30 new locations
+We’ve re-organized the rwgmixer.xml and it’s spawning groups and now have every POI spawning as intended
+POI location size restrictions have been removed so every location will now be included in possible locations lists. F.e. the football stadium can spawn
+POI Picker code improved, ensuring a more even distribution of POIs
+POI location facing directions have been fixed so their fronts face roads
+POI height is checked against it’s spawn height to ensure it’s not placed too high in the world
+Hub Generation
+New socket hubs added
+City, town, and rural Hubs are now Socket Hubs and spawn based on terrain available
+Socket hubs can not only be on hills now but they now have organic overall shapes and look. No more square cities.
+Socket hub township type is decided by placed residential buildings using a scoring system
+New socket streets to go with socket hubs
+New socket street generation formula controllable via rwgmixer.xml
+New zoning system to place POIs in certain parts of a town
+Downtown zone area percentage parameter added to rules
+Terrain Generation
+Terrain generation improvements
+Terrain generation now adjusts the heights to stay within the bounds without clamping
+Biome Generation
+Biome dispersion and elevations are improved and more natural.
+Biome decoration generator now checks height of prefabs and blocks to ensure it’s not placed too high in the world
+Highways
+Highways are sexier and have smoother curves
+Highways now all have gravel shoulders
+Gravel Paths
+Gravel paths now use more improved pathfinding
+Gravel paths no longer eat out a chunk of the highways they connect to
+World previewer
+World preview window is now wider
+World preview now has fly mode using movement keys when holding right mouse button down
+World preview window fly mode speed can be controlled with the mouse wheel
+World preview terrain height better reflects actual height
+World preview shows random town name using town name generator
+Other World Generation and Biome Changes
+Biomes have undergone some changes, too.
+
+The gravel spots in biomes are more reliable and will drop 1 unit of the ore they are leading you to.
+Stone in the top soil of plains biomes has been replaced by gravel
+Individual particle spawners (tree stumps) have been replaced by a biome particle manager so there is no random (and possibly extremely high) concentration of particle generators
+Spawning of animals in all biomes has been reworked.
+Darkened snow biome sun light a little to reduce whiteout.
+You can find small patches of fertilised soil in burnt forest biomes.
+You can harvest coal from ember piles and burnt trees.
+Surface potassium nitrate in the snow biome is now replaced with oil shale and coal.
+Nitrate, oil shale and coal can be found on the surface in the burnt forest.
+Added dead trees to the plains.
+New Enemies
+We’ve added some new zombies and some boss variants to improve game stage challenge. Here they are:
+
+Business man zombie – Often found in corporate locations like the new skyscrapers, these zombies are all about the business of eating you alive. They typically carry cash and paper.
+Disturbed Tourist – Everyone loved the old fat Hawaiian shirt tourist zombie so he’s back in HD! Prior to his permanent vacation to the afterlife he was hoarding canned food. Perhaps that is why he was caught and turned into a flesh eater.
+New feral zombies – Every zombie in the game now comes with its feral counterpart. Feral zombies always run and have glow in the dark yellow eyes, are much harder to kill and do more damage.
+Radiated zombies – There are radiated variants of the fat cops, the spider zombies and the zombie wight ‘the artist formerly known as the feral.’ They have the physical attributes of feral zombies and always run, but also regenerate lost health! They glow with radiation making them unmistakable!
+Reworked Enemies
+In Alpha 15 we experimented with UMA procedural zombies but they ended up not looking as good as traditionally modeled zombies, and they did not perform as well either so we decided to replace the new UMA zombies with traditionally designed ones. We’ve also redone collision and ragdoll on all enemies for better combat and more believable deaths. The following have been remodeled and redesigned by hand from scratch resulting in scarier hordes and better performance.
+
+Fallen Soldiers
+Hazmat male zombie
+Biker zombie
+Stripper zombie
+Utility worker zombie
+Team Z Player Football zombie
+Motivated Cheerleader zombie
+Zombie Cowboy
+Zombie Farmer
+Zombie Skater punk
+Hungry Fat Female zombie
+Removed zombies – The miner zombie and the female hazmat zombie have been removed as they didn’t offer enough variance to earn a permanent job at team Z.
+Animals
+Along with adding new animals and reworking some of the old ones we have added a new fur system. All furry animals now utilize our new fur system which renders a furry coat of realistic looking fur on top of the texture. Here are the new or improved additions:
+
+Grizzly bear – The grizzly bear has been redone from scratch with new meshes, textures and animations. They don’t mess with you unless you get too close to them. They like to habitat in the green forests and snow biomes.
+Zombie bears – The zombie bear has been remodeled from the ground up and is meaner than ever. Don’t feed the zombie bears, they only eat human flesh. They are only found in the wasteland and burnt forests.
+Wolves – Grey Wolves are a brand new threat to 7 Days. Like the bear, they attack if you get too close to them, and do more damage than zombie dogs but they give up easier. Wolves are found in the green forests, snow biomes and plains.
+Dire Wolves – Black with glowing eyes, this wolf is much larger than the grey wolf and is to be feared as they are much more aggressive than any predator. They rarely spawn in the forests and snow biomes, but can roam in packs.
+Zombie Vultures – The undead have taken to the skies! These nearly relentless pesky birds stalk the player from the skies and attack without warning. Luckily they  don’t like to be indoors so players can find refuge indoors from them. They are common in all biomes except the green forests.
+Rattlesnakes – Rattlesnakes are fairly defensive reptiles but will strike and defend their territory if you get too close to them.
+Added: Wandering vulture hordes, wolves, and wolf packs
+We’ve also redone collision and ragdoll on all animals for better combat and more believable deaths.
+Painting
+Use a paint brush and paint to give your base a custom look. Focus on any paintable block and use the secondary action to paint a surface and the primary action to erase the paint from a surface. Hold the reload key to see additional painting features and change the desired paint color. Unlock additional paint groups by finding and reading painting books. Many new textures have been added to use for painting.
+
+There are many Radial paint options some of which are only available in cheat or creative mode. Radial Options include:
+
+Materials – When this icon is selected the paint selection menu is displayed. Here you can select the paint you want, search for paints, see how much paint per face they cost and see what paints you have unlocked.
+Paintbrush  – When this icon is selected the primary action erases a painted block face and secondary action paints a block face.
+Roller Icon – Paint or erase a larger area of faces.
+Spray-gun – Paint or erase the massive area of faces.
+All-sides – Paints all sides of a block face.
+Texture Picker – When this icon is selected the paintbrush will be set to the paint that the cursor is focused on if it is unlocked.
+Copy Block – Select this icon while focusing on the desired block to copy a stack of painted blocks to your belt.
+Replace – Select this icon and the next face you paint in a location will be globally replaced within that location.
+Experience, Progression and Skill Changes
+Many improvements and changes have gone into the skill system for Alpha 16, including:
+
+You can scroll through all levels of a skill or perk and find out what you will get from it.
+You will get less experience for killing zombies but there are a lot more zombies in the world now. In some cases over 100 in a single POI.
+You will gain XP from harvesting and farming and better tools or perks can increase that.
+Crafting skills are now perks with 10 buy-able levels.
+Higher levels of crafting perks require a certain player level.
+Armor crafting skills merged into one skill. If it takes duct tape, leather or iron, it’s Armor Crafting. A simple bandana is Misc Crafting.
+Low crafting skill tiers yield great benefits for repair degradation. Picking up some of the basics enables you to repair items efficiently. At max crafting skill you have trivial repair degradation.
+Electricity recipes are unlocked with a series of Science-based perks.
+Both the cost and effect of perks increase at higher tiers so that buying a perk tier gets you an increase proportional to the cost.
+The Fixer perk is cheaper and reduces repair degradation by up to 1/3 for all crafting skills.
+Crafting firearm ammo requires an anvil and workstation, not calipers. Bullet tips and similar materials do not require a perk.
+The tutorial quest gives you enough skill points to actually buy a perk.
+The bedroll newbie quest is #1 instead of #7 in the quest chain.
+Bad Mechanic perk to increase construction (wrench) harvest amount
+Ability to page through skill levels to see attributes and requirements for any skill level
+Science and Painting skill categories
+Upgrading farmland with fertilizer provides XP.
+Repairing or upgrading a block now gives XP based on materials used multiplied by their count
+Harvesting a block now gives xp based on item materials gained
+Planting crops gives block material exp
+Crafting skills are now buy-only. You still gain level XP for crafting and repairing
+Master weaponsmiths can craft machetes
+Most perk requirements lowered because players should never have skill points and nothing to buy with them
+You can craft/scrap/repair with leather without buying a Leather Tanning perk
+Crafting advanced workstations uses the science skill
+The Knife Guy and Miner69er perks increase harvest amount at the higher tiers
+Adjusted perk costs to reflect crafting and other skill changes
+Both the cost and effect of perks increase at higher tiers so that buying a perk tier always gets you roughly the same proportional increase
+The Fixer perk is cheaper and reduces repair degradation by up to 1/3 for all crafting skills
+Low crafting skill tiers yield great benefits for repair degradation. Picking up some of the basics enables you to repair items efficiently. At max crafting skill you have zero repair degradation
+The Secret Stash perk is the only way to see the highest trader stash level.
+Full Gamepad/Controller Support
+We’ve added full gamepad/controller support and tested for Xbox One, PS4 and Steam controllers. The controls are not definable but are the same as the console version defaults. They even have custom button icon prompts that display when using a controller. Note that on-screen keyboard for text fields will only be available when the game is started from Steam’s Big Picture Mode.
+
+This also includes updated windows as well as keyboard hotkeys for actions on items.
+
+New Recipes
+There are new recipes for building blocks, traps, electric devices and resources.
+
+Bulletproof glass is tough but can only be “repaired” with a completely new block
+Several material tiers got expanded to new shapes.
+Loose Boards Traps
+Jail door
+Wedge corners
+Stairs corner
+Rounded blocks and corners
+Molotov cocktail
+New Items (Lootable/Harvestable/For Sale)
+We have added new items you can get by looting, harvesting or purchase from traders.
+
+Paint magazines to unlock paint groups for the paint brush.
+Said paint brush.
+Compound bow, which is more accurate than a wooden bow or crossbow and fires faster than a crossbow.
+New Creative Block Shapes
+We have added new block shapes for the creative builders to use and improved the placement mechanics. Here are a few of the many highlights.
+
+Frame blocks show proper backfaces which makes them easier to place correctly
+Damaged concrete and wood blocks
+Both centered and non-centered iron bars.
+Cars automatically pick random colors based on their x/y position
+I-beam blocks
+Arch shape
+Cube cutout backfaces shape
+wedge60_corner
+3D ladders
+3D ramp frame shape
+Cube eighth shape
+billboard_centered shape
+Box collision to ramp frame
+Curved wall 3x3x1
+Concrete destroyed 05,06,07
+wedge60 inside corner set
+Block Rotation and UV Improvements
+In order to add painting and fix a lot of bad UVS we’ve unified block and model rotations.
+
+Every building block can now be rotated to all 24 rotations some special model ones still have 28 for 45 degree  ground rotations
+Blocks can have a “handle face” orientation, defaulting to sticking a certain side of this block to whatever surface you are pointing at.
+All place-able blocks now have radial options to improve placement including:
+Simple Rotation – rotates the basic 4 on the ground plane
+Advanced Rotation – rotates all 24-28 rotations
+On Face – Rotates on the face your cursor is focused on
+Auto – rotates away from you automatically. This tag is only on some blocks like ramps and stairs
+Copy Rotation – Copies the rotation your focused on to the stack your holding.
+Land Claim Improvements
+
+We’ve increased the default size of land claims to 41 to work with electricity and coming Alpha 17 settlement features.
+Our general block placement colors have been changed to following: Green inside your claim, Yellow inside your friends claim, White everywhere else, Red cannot place block.
+Made block placement glow grid double sided so you can see it from underneath too
+You can pickup and move electrical components and work stations inside your claim.
+Electrical Items outside of your claim can be cut and wired by strangers
+New Stealth System
+Stealth 2.0 is more flexible and allows for more varied zombie behaviors.
+
+Things that affect how a player is detected:
+Player Light Level (world lighting and equipped items)
+Player Stance (Standing or Crouched)
+Player Motion
+Noise
+Smell (carrying fresh meat is not ideal for sneaking around zombies)
+Distance
+Zombies have varying stats both for the zombie type and individuals.
+Some see better than others, some hear better than others, some smell be… actually they all smell bad but you get the idea.
+A sleeping zombie may or may not growl a bit when it’s close to waking up.
+Which way a sleeping zombie is looking does matter.
+If you clear an area completely it will take several days to respawn. If you don’t and leave it will respawn quickly.
+Placed (active) bedrolls prevent sleeper respawns in a… range
+…now defined in serverconfig.xml (BedrollDeadZoneSize)
+To zombies, held torches are the least noticeable light source. Then come gun lights, flashlights, and the mining helmet is the most noticeable.
+New Weapons and Weapon Improvements
+
+Molotov cocktail craftable by player. Be the life of the party and light zombies and players on fire. Player recipe included.
+Compound bow with parts and loot list entries. Required to use steel and flaming arrows. Loot only.
+Weapon Sight In & Out. Pistol, Mp5 and Ak47 have reworked iron sights for more accurate aiming, and have new fire sounds. All weapons have an aim in and aim out sound now too.
+Added local impact sounds for distant shots scored. This allows you to know when you scored a distant hit.
+Improved bow, crossbow aim and iron sighting no longer shows crosshair. Compound bow has range sights.
+All weapons have hip fire accuracy now. Hip fire is less accurate than iron sights.
+Accuracy overhaul for all ranged weapons.
+Minibike Improvements 
+Minibikes now show an icon on the map and compass for the person who placed the chassis or attached the lock to it to avoid losing them in the wild.
+
+How minibike parts are processed, decreasing processing time from 2ms to 0.5ms
+Fix for minibike vanishing and falling through the world
+Client will receive minibike NRE when someone in the game rides a bike
+NRef in GUIHUDStealthInfo.cs when quitting while sitting on a minibike
+Minibike NRE when leaving and reentering game from main menu
+Minibike chassis placement dupe
+Added
+
+Broken girder beams in the wasteland are now a block shape instead of a model
+New rusty texture for girder beams and rusty metal
+New block rustyMetalWall
+4 new beards to character selection menu
+Iron bars and iron bars centered
+Flannel shirt item, also used by arechtype MadMole
+Flannel shirt variations and loot entries
+Stairs filled corner shape
+Add buffs to explosions
+New quarter cube shape
+Generic craftable storage crate
+Support for binding CapsLock
+Keyboard hotkeys for item actions
+Keypad divide (‘/’) toggles invisible mode (SP only!)
+Step trash sound variety
+DOF for focussed views, like staring at a rock while you chop it
+Concrete terrain block
+Show password checkbox to password dialog, password hidden by default
+A full spectrum of paintable drywall/concrete textures
+Loose floorboards that break away when you walk over them
+Ramp corner cutout shape
+Grey and dark grey paints
+Hit sound when hurting players, zombies or animals about 10 meters or further away
+cube_glass shape that hides inside faces
+Plywood texture for new construction and boarded up windows
+improved fog performance
+Washing machine and trash compactor loot containers
+Added a bookstore and car parts shipping / loot crate
+Added a Construction Site loot and random container
+Security gate plate
+Business glass plate and curved plate for counters and such
+Commercial blinds shape and textures
+New archetype Richie, a well groomed businessman
+Several new random car colors: dark green, dark blue, beige and black
+New character preset Roxy
+Focus search fields in windows with “F”
+Lockable, craftable wall drawer
+New Destroyed bridges over forked river east of and leading to the new departure city
+Broken workstation blocks (for prefabs) that can be looted or harvested for parts.
+Hidden Stash (hero) shipping crate + loot container for prefabs
+Lab equipment shipping crate + loot container for prefabs
+new round ladder model for metal ladders.
+burnt biome reference to the farming journal entry.
+Workstation journal entries: added info on items having to be in your inventory
+Changed
+
+You can harvest plant fibers from grassy terrain blocks
+Plant fibers can be harvested more efficiently with a hoe
+Reduced crafting time on cottonPlant
+Rebalanced harvest events of cars
+Zombie limb dismemberment rebalanced
+When digging up fertilized farmland there is a chance to harvest fertilizer
+Making glue does not require cooked water
+Multiple seeds can be planted by holding down the mouse button and moving down the row and the placement cursor is always on, making targeting easier
+Increased hit points of vending machines
+When a loot container is destroyed a bag with the content is dropped instead of individual items
+Overbright mining helmet light set back to 1x intensity instead of 2x
+Grate block removed
+Moldy Bread is a science crafting item
+Fat zombie cops are bigger
+Zombie soldiers are less generous with the rocket launchers
+Shotguns only have one schematic
+Increased the amount of ammo that traders carry
+Low quality weapon parts are more durable and effective
+Maple Forest biome grass, added specular channel to grass. Adjusted spectrums, added sparse pine trees.
+Grass normals now have a 10% direction to them in order to catch better specular lighting
+Renamed assembly tip title from Gun Assembly to Item Assembly
+Mass/SI values adjusted to be more consistent and easier to understand
+Available gamestages increased by 50% to make the life of high level players more interesting
+Corn plants are 3 blocks high at every growth stage. Every other farm crop (including mushrooms) is 2 blocks high
+Updated glass to better high res texture
+Replaced shower glass with new tiling gen glass
+Sun angle is now SE to NW
+Updated decayed b texture, redwood fence texture and scrap iron walls to HD versions
+Auger and chainsaw parts are less rare
+Increased chance to find forged iron and steel in loot
+Reduced block damage of explosive bolts to be in line with pipe bombs
+Poncho and bellows are made from leather
+Poncho renamed to Leather Poncho because the animal hide armor is the “warm and furry” armor
+There are 5 scrap armor schematics instead of one McDyver book
+Quality level loss from repairs has been lowered
+Slightly lower slowdown from barbed wire fences
+Increased the availability of padlocks
+Preview placement block is fully opaque
+Burnt Frame used on roofs can be upgraded
+Street light metal is less shiny and more rusty
+Reduce light intensity on mining helmet and minibike to match flashlight
+Some tool damage and block health values rebalanced
+Most block destroy events moved to harvest events
+Block/Entity Harvesting overkill now provides bonus resources
+The tutorial quest gives you enough skill points to buy the cheapest perk
+Stone in the top soil of plains biomes has been replaced by gravel
+The gravel tendrils that lead down to ore veins spawn more consistently and they always drop 1 piece of the ore you would find below
+Better tools (steel instead of iron tools) will harvest considerably more resources from the same block
+Increased stack size of mass resources like rocks
+You can place the claim block farther away so you can see the size of the affected area
+Evenly distribute load for block ticking over multiple frames
+Calipers are not required for crafting ammo. Bullet tips and similar materials do not require a perk
+Improved sniper zoom animation
+Expanded scout / sleeper group with the new radiated / feral zombies
+Rebalanced and extended gamestage lists to allow higher difficulty for groups of players
+Made sandstorm effect more grainy
+Made the biome snow “smoke” a bit more noisy
+Removed old treestump blocks that create snow, smoke and sandstorms now that we have procedurally placed particle effects
+First round check for flat space, if no town area is found, use the more liberal per cell height diff check
+Widened highways to 10 to match socket roads
+Mirror texture has no black wood trim, but is now seamless for full length mirrors
+Town/City street axioms to allow for more growth
+Adjusted placement range of cars
+You can scrap a blood draw kit into plastic
+The car is now simply labeled “Sedan”
+Redid low res creme drywall and creme drywall baseboard textures
+Use game GUID for local save cache folder so it properly “resets” when another server with the same game name is joined or the server is reset but keeps the game name
+Darkened moonlight in wasteland biome
+Rain sky and fog when raining
+Stainless steel texture is bigger and better
+Updated stainless fridge top and bottom textures
+Water textures
+Improve a couple destroy shapes
+Thickened fog and trees in burnt forest
+Darkened snow biome sun light a little to reduce whiteout
+Increased chance for spawning of bears
+Shipping / loot crates use a standard texture now, allowing for more varied loot distribution
+Better framerate reflections that include distant terrain
+Requirements now reflect currently viewed level
+Level text on requirements to “Player Level”
+Attributes in locked levels, grey out just like req
+Only show unlocked recipes for currently shown skill level
+Wood/metal desks support blocks again
+Rebalanced sensitivity of land mines and explosives to damage and other explosives
+Now using “sack dropped” for each dropped block as model
+Misc Crafting group icon now changed to match the misc crafting skill icon
+Reairing a block is cheaper than building it new
+Crafting skills have 10 buyable levels
+Removed old hornet assets
+Max camera control pitch is -80 to 80 instead of -90 to 90
+Both concrete and reinforced concrete need time to harden after being placed
+Handguns and shotguns are pretty accurate when fired from the hip and are more accurate if you aim
+Rifles are less accurate when fired from the hip and very accurate when aimed
+Less loot is found on zombies
+Finding whole guns is more common than finding parts. Traders carry more guns and ammo.
+Cars now angle with terrain
+Socket town roads now use trimming to blend with the surrounding terrain
+Bow weapons have wider crosshairs
+Bows now sway unless iron sighted
+Loose gun parts that you find are generally higher quality than whole guns
+Shotgun wound buff slightly tweaked upwards
+Increased fire rate of 9mm pistol and animation speed
+Increased dead body hit points so corpses don’t turn to blocks before they hit the ground
+Increased firearm durability by 25-40%
+Mp5 and ak iron sighting is more snappy
+Updated night vision effect
+Feral zombies spawn at night in the wasteland Note that they can survive the night and be active during the day
+Main building blocks, doors, and hatches use passthrough damage on downgrades
+It is now not possible any more to place a plant seed if there is not enough light for this plant to grow
+Corpse blocks now destroy to a torso instead of a backpack.
+Dead zombie ragdolls last longer and have more hit points to destroy. When destroyed they downgrade to a block zombie corpse. The block zombie corpse will degrade to nothing over time instead of a rib cage. If the block zombie corpse has loot in it and is destroyed, it will spawn a rib cage model that contains the loot instead of a backpack.
+Desaturated the plains sun a little, darkened the ground texture and grass.
+Splint requires now requires cloth, wood and duct tape to craft
+Shadow flickers at far locations – Adjusted shadow cascade distances, near clip plane, and fixed near/far shadow option values to reduce shadow flickering when you’re far from position (0,0).
+Increased zombie dog health, they are too easy to kill now that the glitchy spinning is fixed and nerfed wolf health
+Updated forest biome art
+Updated sand texture
+Farming: Partially grown crops can be harvested for 1 seed.
+Suppress the impact sound on blocks if the hit also destroys the block
+Torches are made with animal fat (no cooking pot required)
+Torches and candles placed on walls will eventually attract zombies
+Heat value (attracting screamer zombies) of forges and campfires reduced by 25%
+Thinned amount of tree stumps in the snow biome
+Adjusted Trader secret stash inventories
+All ammo items have been labeled (Ammo) so they can be searched for
+Moved drop toolbelt item to G, godmode to Q
+all campsites and army locations to use camo and other paints for variety. Two large campsites are now army campsites
+You can no longer invest skill points in the Misc Crafting skill
+Overalls are now made from cloth
+Slowed player leveling.
+Some wood harvest amounts reduced and fuel value increased
+Increased hit points of valuable workstations so they are not destroyed accidentally.
+Cooking stews is more expensive but more rewarding.
+Healing from eating food has been reduced in general.
+You start with a claim stone in single player because it now enables the pick-up ability for certain blocks.
+Fixed
+
+Running shoes can be scrapped
+Chrysanthemum seeds can not be found in loot
+The pistol skill does not make clear that it also covers revolvers
+Vending machines are limited to a x8 claim modifier
+Removed stray vertex from shantywall collision
+Underground caves cause blocks above them to collapse
+Rain effects fixed on signs placed indoors
+IOException when deleting a saved game
+Cars misaligned on slopes
+Open locked doors need abiltiy to be closed by all
+Duplicate any item in zombie corpse
+Screen flickering during daytime lightning
+Vending machines covered in snow indoors
+Block placement too opaque
+Not ignited Dynamite does not blow up after nearby explosion
+Window03 getting occluded by water
+Glass windows in hospital outlining terrain behind them
+Distance between players is not updated when user is in Players tab
+Player can drop items into walls and be unable to retrieve them
+Now playing interactive sounds at the position of the target block
+Car windows not getting snow cover
+The player is able to pick up items not focused in POI
+Character has to be in water in order to drink from it
+Crouching affects open/close volume levels
+No “Collect item” prompt is displayed on dropped Stone Shovel
+Increasing server heap by shooting rockets at ground of lake
+Dupe items using full backpack and lootcontainer
+Player is able to upgrade and destroy blocks simultaneously
+Concrete mixers are 1 block high but require 2
+Excessive journal tip links removed from items, missing ones added
+Campfire Dupe from forum and youtube find
+Audio getting cut off before finished
+An MP5 would not normally use 10mm ammo
+Concrete Mix bucket model looks the same as Bucket of Water after dropping
+Consumable items can be substituted with another while being used
+Container Sorting – Not functional in Minibike Storage
+Container Sorting – Stacks of same blocks are not sorted together in Container or Backpack
+Client in a multiplayer game does not receive Harvesting Resources note after killing an animal
+Pistol cannot be picked up after being dropped
+Auger falling through world
+Iron Desk Stability is different than Wood Desk
+Scrap metal log spike yields wood upon destruction
+Dupe assembly items with sorting button
+Crafting queue does not advance after slot is cancelled
+Incorrect collision detection on Minibike
+Ammo amount indicator does not appear after respawning while wielding a weapon
+Death of the player’s character does not affect the number of spawned zombies during horde as intended
+Missing Accuracy and Range stats for certain ranged weapons
+Crosshair is visible for Rocket Launcher whilst aiming down sight
+Rocket Launcher unaffected by Range and Accuracy stats listed
+Placed decorative blocks may partially sink in the surface
+Spending Skill Points Journal Entry added only after completing Basic Survival Quest
+Zombiespawn is triggered in owned POI by players w/o bedroll in it
+Mouse sensitivity can no longer be set to 0
+The player may get stuck in the wall after dismounting minibike
+DOF for distant terrain
+More severe description of the thirst/hunger effect that actually does damage
+Chunks may not stream for certain players, also affecting mobs
+Terrain artifacts may appear after removing large portions of ground
+Zombie moan playing when they’re knocked out or dead
+Impact sounds not playing quieter when crouched
+Disappearing eyelashes while wearing particular headgear
+Jewelry disappearing when wearing a hat
+Missing drowning audio
+Animal Hide Leg Armor is not displayed on character model
+Terrain mismatch causes blocks not to render ( A15 & A16 )
+Explosion does not affect the roof correctly
+Using a bow results in multiple arrows being visible from another Player’s perspective
+Some errors and potential NREs in networking if disconnected during login phase
+Doors and undamaged windows do not keep the rain out
+Many objects not getting snow cover
+Grass tips missing snow
+Lightning & Thunder on Dedicated Servers
+Thunder synced between clients in MP games
+Player dropped Backpack cannot be looted in shallow water
+SetTraderArea can now also be used to remove a trader area protection
+DeathCam persists after getting kicked off MP games
+Water reflections flickering when camera near water surface
+Assigned the relevant crafting skills to weapon parts
+Wrong sound on one of the blood bag actions
+Terrain has missing textures and black areas
+Signs cannot be picked up once dropped
+Terrain clipping exploit
+Cement description is misleading
+Duping bug using facial piercings
+Bypassing loot timer by aborting loot progress
+treeDeadShrub has wrong hitbox
+You can place a bedroll in spaces too small to spawn a player
+Socket Road LSystems not properly returning to last save point
+Haybale is not repairable
+Gas can and fuel barrel are smeltable in forges
+Bow descriptions show compatible arrow types
+Bugs with trees and crops
+Animals won’t die from land mines while playing on dedi or as client on P2P
+Ramp / inside corner frames do not have backfaces
+Chemistry station not getting correct indoor/outdoor weather values
+Fridge audio playing after quitting game
+Snow on glass fix
+Sun/Moon pop in movement on clients of MP games
+Raw but fresh food has a lower chance for food poisoning than rotten/moldy food
+Flaming arrows are ineffective if the target is on fire already
+Items can be thrown through hatch’s collision box
+Metal railing downgrades to wood railing
+Shooting through lower part of the frame may cause projectile to go under the ground texture
+The player can loop use animation of specific consumables and delay correct use of them
+For each out of sync in network writing of Chunk
+Old Sofas has incorrect icon and different name in creative menu
+No icon when you pick up seeds while harvesting trees
+Added send-backoff on errors for Steam networking
+Change Hazmat Shirt into a Hazmat Jacket to prevent clipping issues
+Wrong side textures on windowPlug blocks
+Assigned correct (new) cutout shapes to frame blocks
+Disappearing faces on wedge60 cutout
+Table doesn’t hide itself
+Some windows or wooden window frames have the wrong material type
+stairs_filled_quarter_vertical_uv collision and zombie pathing
+Timing on zombie hand attacks
+Chalkboard is spelled incorrectly
+Player unable to pass through wedge corner railings
+Terrain concrete is too white
+Road lineup issues in towns
+Prefab heights in towns
+Various other regeneration related issues
+Blend not working
+Highways not lining up in some cases
+Limited bumpiness and cliffs on upward and downward turns
+Collision on resource rock ID# 630
+Wood frames durability is unequal
+Unintentional air gap in flooded basement
+Highways no longer connecting to other highways
+Highways going to center of hub by default
+Water holes in RWG due to road ending
+Incorrect/missing fall events on some doors and log spikes
+(Most) Navezgane Bridges are having SI issues
+Sandbags are missing repair/harvest properties
+Secure Reinforced Door collapsing into iron debris
+Secure Reinforced Door and Metal Reinforced door do not turn into debris
+Reinforced Wood Metal Log Spike3 does not leave debris after collapsing
+Food Poisoning debuff is not refreshed when reapplied
+Using delete key in input fields on Linux causes malformed strings
+Cleaned up old corpses. We now have decoys
+Removed duplicate sight from shotgun mesh
+Wrong sound when using a blood bag
+Outdated hit point values on some blocks/materials
+Improve map colors
+Water bottle icon showing incorrectly in character tool belt after filling
+Fridges had doors on both sides
+Keep populating server list after sorting
+No floating “crafted” HUD icon with CustomIcon
+When leaving game with attachable wire in hand – on rejoin the wire runs to 0,0,0
+Farming feature suffers from a number of issues
+Player is able to place cooking tools when UI shows padlock
+Death animation disabled when alt tabbing during death
+Breaking down a car on the sloped road will create a hole in the world
+Some clothes and armors are lacking Waterproof statistic
+Skill requirements of perks do not display localised string
+Info window level starting at 0
+All explosive ammo and mines use the Science crafting skill
+Concrete and steel blocks have reversed explosion resistance
+Zombie gore causes a blockage on catwalk, prevents zombies from advancing
+Snowberry poisoning is causing wellness number to be too lengthy
+Skill menu search function does not cover localized strings
+Stack overflow exception when starting a new seed
+Hunting Rifle has small zoom available
+Bear had no collision or ragdoll
+3rd person clipping into main player camera when opening camera control window
+Fix nightvision/miningLight double activate issue when holding a gun with no flashlight enabled
+The UI shows incorrect weapon damage
+Healing items can be used to identify decoy sleepers
+Snowberry poison / blood draw kit buff lasts through player death
+Audio – shotgun repeat rate fix
+AK47 firing sounds
+Many zombies material was set too dark
+Exception in ItemValue Constructor
+ArgumentOutOfRangeException on specific sign use
+Cancelling bow and compound bow shots is now smooth and animates back to the idle position naturally instead of a lag and instant pop
+Unisex Hair Raider rendering issues
+Dev-flagged pickup frames and other “game mode” items like secure storage chests
+Increased maxAlive scaling on gamestaged spawns. Both maxAlive and the max zombie / player menu setting act as max caps.
+Distant terrain with holes in Navezgane
+Raider hair overlay
+Removed deprecated properties from sounds.xml
+Zombie triggered car explosion doesn’t kill zombies
+MP5 front sight is below the crosshair mark
+Fix zombie run offset from dusk/dawn stinger
+Issue where client skills wouldn’t clear out when joining a server
+Fix glass icons transparency making them chopped up
+Cannot shoot through certain Iron Bar (1126) rotations with guns – RWG
+Session temp freezes when cancelling large recipe counts
+INF Hub Cell does not exist at grid position 0, 1 for client
+Incorrect values are shown in “Gun Smithing” skill
+Large Welcome Sign Prefab seems to defy physics
+Horde difficulty does not adjust correctly for a party with multiple players together
+When new players join a dedi (day 77 ) the gamestage recalculates, gives only 1 zed each
+Excessive harvest quantities
+Block placement rotating when pausing the game.
+Vehicle data saving on clients
+Localization not working when game is not installed in Steam client
+zombie transition from walk to idle and vise versa not smooth
+Add zombies killed by playerdeath back to the pool
+Marker not showing for clients when first placing minibike
+Unmanned minibike triggers tripwire
+Red paint showing on distant lod damaged cars
+Secret Stash does not require Barter skill
+Typo in cotton description, form should be from
+un-needed railings in oil refinery
+change color placement to red if the player blocks it
+Decoration Replacing Light Pole Base in Nav a tp -1660 61 772
+Game settings, command line, command console
+
+Allow overriding the Steam language with the “-language=” command line argument
+Launcher switch for exclusive fullscreen mode on Windows (“-window-mode exclusive”)
+Allow EAC to be put in debug mode on servers with “-debugeac” flag
+Console command “visitmap” to generate chunks and minimap contents
+Console command “givequest” prints list of available quests if none given, also preventing an NRE when given an invalid quest name
+Print IP of client to log on connect
+ini support – location is in the same folder as Saves for your saved games.  It will be auto-generated and filled once you exit the game, if it doesn’t exist. When hitting apply in the graphics options it should not overwrite your ini settings unless you specifically set those settings, or change Graphics Quality, in the graphics options menu. The default graphics options have been adjusted for better general performance.
+Modding
+
+Allow parameters to be passed to XUi controls as well as using them in simple calculations
+Added “-debugxui” and “-debugxui=verbose” arguments to show XUi related warnings while loading, especially with control instantiation
+Added a server side log entry “PlayerSpawnedInWorld” when a player actually spawned, as well as the according ModAPI event
+Data/Config/Stealth.txt documents the stealth system and how to adjust it
+Biome Particle Manager – Biomes.xml can now specify particle effects to play per biome with a few variables for count and placement.  The BiomeParticleManager syncs all clients together and the particle effects are saved and loaded per game.  Exact location of the effects is mostly “random”, but synced between clients, while still only playing the effects within its correct biome.  More effects are spawned per biome a few seconds after players enter new biomes or every 5 minutes or so per client, but spawn count won’t go above the specified max in the biomes.xml file per effect, per biome, world-wide.
+Reworked a bunch of the internal prefab editor features and UI to get closer to a prefab / world editor for public use
+Servers / Config
+
+“EnemySpawnMode” serverconfig setting is now true/false
+“EnemySenseMemory” serverconfig setting has been removed
+Added “BloodMoonEnemyCount” setting (Adjust this to get more enemies per player on blood-moons if your game stage is high enough. Game-stages are still determined by your party)
+Added “BedrollDeadZoneSize” setting (This is a 3 dimensional unit in meters from bedrolls that blocks zombie spawning.  Including zombies spawned from biomes, screamer hordes, blood moon hordes and even sleeper volumes that are within this distance.)
+Allow overriding serverconfig settings via command line (“-settingname=value”)
+Added “HideCommandExecutionLog” to disable printing of command execution to the server log
+Limit of per player uncovered map area configurable with preference “MaxUncoveredMapChunksPerPlayer”, client side defaults to 4 times the area of before A16 (128 km² instead of 32 km²)
+Support reserved slots (“ServerReservedSlots” and “ServerReservedSlotsPermission” settings) as well as admins joining the server even if already full (“ServerAdminSlots” and “ServerAdminSlotsPermission” settings)
+Known Issues
+
+Electric Fences do not have a unique buff yet this is coming in A17
+On-screen keyboard is only available if you start the game from Steam’s Big Picture Mode
+Smell is not working with the new stealth we will revisit it in a17
+Once you are hunted, it takes along time for them to lose interest and your position.
