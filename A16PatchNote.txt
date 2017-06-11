@@ -752,7 +752,6 @@ Electric Fences do not have a unique buff yet this is coming in A17
 On-screen keyboard is only available if you start the game from Steam’s Big Picture Mode
 Smell is not working with the new stealth we will revisit it in a17
 Once you are hunted, it takes along time for them to lose interest and your position.Advanced rotations of doors and hatches are offset incorrectly.
-Advanced rotations of doors and hatches are offset incorrectly.
 Mac OS has a rendering overlay bug.
 Mac OS distance building render too dark.
 Linux OS distant water has missing texture.
