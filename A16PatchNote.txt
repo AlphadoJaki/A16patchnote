@@ -1,10 +1,10 @@
-A16 Early Streaming & Release Notes 06.06.17
+A16 Early Streaming & Release Notes
 Hey Survivalists,
 Here are the release notes for the upcoming Alpha 16 release. We know you folks like to read them beforehand so we’re releasing them early. In the meantime, you can watch our Streaming Partners play it Now!
 
 They will be giving away keys and you may even see a developer or two show up.
 
-Steaming Partners
+Streaming Partners
 
 Alpha 16 Official Release Notes!
 
@@ -346,6 +346,17 @@ Lab equipment shipping crate + loot container for prefabs
 new round ladder model for metal ladders.
 burnt biome reference to the farming journal entry.
 Workstation journal entries: added info on items having to be in your inventory
+Broken workstation blocks (for prefabs) that can be looted or harvested for parts.
+Helper blocks to randomly spawn a working or busted workstation.
+Hidden Stash (hero) shipping crate + loot container for prefabs.
+Lab equipment shipping crate + loot container for prefabs.
+New round ladder model for metal ladders.
+Added Broken Battery Bank, Broken Generator Bank.
+Added recipe for Loose Boards Plate 1×1
+Random stations spawners to some locations in the world which spawn a random station in working or destroyed condition.
+Bookstore boxes to bookstores, lab boxes to pharmacies and auto parts boxes to auto locations.
+Heat to wall torches
+Business Glass Pane (Trap) + Business Glass Centered.
 Changed
 
 You can harvest plant fibers from grassy terrain blocks
@@ -483,6 +494,17 @@ Increased hit points of valuable workstations so they are not destroyed accident
 Cooking stews is more expensive but more rewarding.
 Healing from eating food has been reduced in general.
 You start with a claim stone in single player because it now enables the pick-up ability for certain blocks.
+Updated the abandoned houses to use a variety of siding and roofing textures
+Increased the cost of claim stones
+All trader locations now have a working version of every station workbench, forge, chemistry station and cement mixer. All non trader locations stations have been replaced with a random station spawner where they have a small chance to be a good station and a greater chance to be a broken station which can be looted and harvested for parts.
+Workstations can no longer be fully harvested with a wrench. Inside of a land claim area you can pick up workstations placed by a player.
+Gave banks the new bullet proof glass.
+Slower bloodmoon fade 6:00PM-10:00PM
+Cooking stews is more expensive but more rewarding.
+Healing from eating food has been reduced in general.
+You start with a claim stone in single player because it now enables the pick-up ability for certain blocks.
+Increased hit points of valuable workstations so they are not destroyed accidentally.
+Slowed player leveling per level.
 Fixed
 
 Running shoes can be scrapped
@@ -693,6 +715,10 @@ Typo in cotton description, form should be from
 un-needed railings in oil refinery
 change color placement to red if the player blocks it
 Decoration Replacing Light Pole Base in Nav a tp -1660 61 772
+Fixed: Added burnt biome reference to the farming journal entry.
+Fixed: Workstation journal entries: added info on items having to be in your inventory
+Fixed: Audio clips not stopping upon leaving a game
+Fixed: SDTD-6556 Audioloop possible on auto fire tools/weapons – when emptying a clip with no ammo
 Game settings, command line, command console
 
 Allow overriding the Steam language with the “-language=” command line argument
@@ -726,3 +752,7 @@ Electric Fences do not have a unique buff yet this is coming in A17
 On-screen keyboard is only available if you start the game from Steam’s Big Picture Mode
 Smell is not working with the new stealth we will revisit it in a17
 Once you are hunted, it takes along time for them to lose interest and your position.
+Advanced rotations of doors and hatches are offset incorrectly.
+Mac OS has a rendering overlay bug.
+Mac OS distance building render too dark.
+Linux OS distant water has missing texture.
