@@ -1,10 +1,7 @@
-A16 Early Streaming & Release Notes
 Hey Survivalists,
-Here are the release notes for the upcoming Alpha 16 release. We know you folks like to read them beforehand so we’re releasing them early. In the meantime, you can watch our Streaming Partners play it Now!
+Alpha 16 is out and is by far the largest content update we’ve ever done. So without further ado let’s get ready to rumble!
 
-They will be giving away keys and you may even see a developer or two show up.
-
-Streaming Partners
+ 
 
 Alpha 16 Official Release Notes!
 
@@ -209,6 +206,8 @@ Low crafting skill tiers yield great benefits for repair degradation. Picking up
 The Secret Stash perk is the only way to see the highest trader stash level.
 Skill screen allows purchase of multiple skills at once.
 Skill screen now shows — for cost of maxed out skills.
+Skill screen now shows KNOWN for buy option when trying to purchase a known rank.
+Skill info window now shows skill purchase cost.
 Skill points gained per level have been increased to 6.
 Changed: Misc crafting is now a perk.
 Full Gamepad/Controller Support
@@ -784,6 +783,54 @@ Workstations output goes to first free slot – ignoring existing stacks.
 Zombie corpses are not being cleaned up in unloaded chunks.
 Player Editor has invalid character selections available.
 It seems like it rains way too much in game.A rainy time slot is selected by the server each day now. It can only rain during these selected hours IF it is cloudy and a rainy weather dice is rolled. This possible rainy time can range from 8-12 hours per day and it can never rain outside those hours except on 7th days.
+Duplicate items inside dead zombie
+Client now creates a lobby when joining a dedicated server, thus allowing people outside the local LAN to connect to dedicated servers without port forwarding
+Player can get stuck behind barb wire at trader Jimmy’s
+Misleading error message when not knowing a recipe.
+Error when using giveself with non-existing item name
+Console not behaving properly when an executed command throws an error
+Pressing Tab during Building Environment skips to the game while it is not yet ready
+Water tower 3 floats in RG
+RWG Terrain Density Mismatch Issue
+Added vault hatch icons and fixed broken XML name on wood hatch icons.
+Missing BlockLoot file for Workbench getting outdoor weather on it.
+Long pulled canyon in RWG
+Zombie remains blocks not getting snow cover or weather effects.
+Panting SFX continues to play even if stamina is replenished
+Wolf can’t attack crouched player, if wolf is slightly elevated
+Sleepers spawn inside blocks that the player had placed
+Make “gamestage” command available for steam version
+Burnt block will suck player up into it.
+Stoves appearing purple in dark areas
+Missing player audio for sick & food poisoning
+Decoy cops instantly start their explode countdown on spawn
+Electrical Equipment placed inside or in cave can collect rain and or snow
+Night vision goggles will show rain inside buildings sometimes
+Friendly animals were spawning in the enemy animals group in the plains.
+Missing fur on bear and improper wake up animation
+Windshields are not getting covered with snow correctly
+Zombie and normal bear do not use attack animation
+Some objects have a purple hue in dark places
+Hospital fountains
+Arrow slits can allow players to see through walls
+Grass sliding across the terrain
+Quality , The Survivor, The Camel, Quicker Crafting, The Fixer may not always have fired correctly.
+Wrong upgrade target on corrugatedMetalCNRRound.
+Switched XP values on snow zombies.
+Mismatching bright lines on textures in dark areas
+Left 2 engine slots of generator inaccessible using controller
+Wood half block ID 830 won’t upgrade
+Too high harvest amounts from grass.
+Missing loot list entry on zombie strippers.
+Claim stones are repaired with steel.
+Players can be set on fire underwater.
+Adjusted price of iron darts to match the new recipe.
+Forge: adding/moving fuel causing duping and disappearing of Items
+Woodburning workstation lighting issues in B129
+Workstations use info spamming state of messages as host
+Stamina use on tools does not scale correctly with harvest amounts.
+Journal tip for first aid, and/or first aid items should be clarified
+Buying levels of secret stash perk doesn’t change item tier
 Game settings, command line, command console
 
 Allow overriding the Steam language with the “-language=” command line argument
@@ -816,8 +863,31 @@ Known Issues
 Electric Fences do not have a unique buff yet this is coming in A17
 On-screen keyboard is only available if you start the game from Steam’s Big Picture Mode
 Smell is not working with the new stealth we will revisit it in a17
-Once you are hunted, it takes along time for them to lose interest and your position.
-Advanced rotations of doors and hatches are offset incorrectly.
-Mac OS has a rendering overlay bug.
-Mac OS distance building render too dark.
-Linux OS distant water has missing texture.
+
+Clipping issues with bears, wolves, and spider zombies
+Too many Airdrop crates spawning and crates spawning underground
+Road Issues
+Blade trap doesn’t damage cops or irradiated cops
+Throwing rocks does not distract zombies
+Trader Issues: Missing Trader, missing POI, odd hours, etc.
+GlobalUV support inhibits anisotropic filtering and it has to be calculated in the shader.
+Wet concrete not drying
+Sleeper spawning issues continue
+“currently in use” message may rapidly change status in p2p
+interactive items may go unresponsive, if player using them is kicked and logs back in before someone else interacts with it (chunkreload fixes that)
+Game freeze on create player, but more information on it is welcome
+Out of Memory issue, please try reduce your texture quality to reduce RAM usage
+Farming of crops other than yucca and hops affects performance
+Zombies rotate on the ground before standing up
+Zombies and animals clip into blocks
+Vultures sometimes fall through the world when killed high in the air.
+Vultures and wolves violate starter safe zone
+Precipitation and cold temp going through windows, glass blocks, doors, and hatches
+Game freezing on creating player
+Missing traders and partial trader outposts
+NRE on picking up a never connected switch (connect it to a powersource once to fix/avoid this)
+Corpse dupe is possible again
+Excessive use of trigger plates may cause servers to lag during hordes.
+Recipes are not updating live
+Bears may not attack properly on slopes
+Running zombies may be airwalking after ladder usage
