@@ -205,6 +205,10 @@ Both the cost and effect of perks increase at higher tiers so that buying a perk
 The Fixer perk is cheaper and reduces repair degradation by up to 1/3 for all crafting skills
 Low crafting skill tiers yield great benefits for repair degradation. Picking up some of the basics enables you to repair items efficiently. At max crafting skill you have zero repair degradation
 The Secret Stash perk is the only way to see the highest trader stash level.
+Skill screen allows purchase of multiple skills at once.
+Skill screen now shows — for cost of maxed out skills.
+Skill points gained per level have been increased to 6.
+Changed: Misc crafting is now a perk.
 Full Gamepad/Controller Support
 We’ve added full gamepad/controller support and tested for Xbox One, PS4 and Steam controllers. The controls are not definable but are the same as the console version defaults. They even have custom button icon prompts that display when using a controller. Note that on-screen keyboard for text fields will only be available when the game is started from Steam’s Big Picture Mode.
 
@@ -246,6 +250,7 @@ Box collision to ramp frame
 Curved wall 3x3x1
 Concrete destroyed 05,06,07
 wedge60 inside corner set
+Wedge stairs with recipes and upgrade path.
 Block Rotation and UV Improvements
 In order to add painting and fix a lot of bad UVS we’ve unified block and model rotations.
 
@@ -357,6 +362,9 @@ Random stations spawners to some locations in the world which spawn a random sta
 Bookstore boxes to bookstores, lab boxes to pharmacies and auto parts boxes to auto locations.
 Heat to wall torches
 Business Glass Pane (Trap) + Business Glass Centered.
+Added Arch 2m blocks/recipes.
+Recipes for glass ramps.
+New HD flagstone texture and replaced old one.
 Changed
 
 You can harvest plant fibers from grassy terrain blocks
@@ -505,6 +513,49 @@ Healing from eating food has been reduced in general.
 You start with a claim stone in single player because it now enables the pick-up ability for certain blocks.
 Increased hit points of valuable workstations so they are not destroyed accidentally.
 Slowed player leveling per level.
+Reduced the wood cost of tools and weapons.
+The stone axe works better against wood and worse against stone. (it’s an axe, not a pick)
+Increased player outgoing damage on higher difficulty levels. On “Insane” it is now x0.5 instead of x0.25.
+Cobblestone frames no longer exist. Flagstone can be upgraded to cobblestone.
+More flagstone block recipes added.
+The adobe material has been removed from the game. Flagstone has been fleshed out with new shapes.
+Small adjustment to bacon & eggs to match the latest changes
+Increased insulation of skull cap, hooded sweatshirt and sweatshirt.
+Concrete blocks use the reinforced concrete icon.
+Tightened up iron sight sway and bob. Now when iron sighting your weapon is in the “aimed” position faster.
+Removed adobe recipes and blocks.
+Reduced sloppy weapon sway when rotating camera and looking up and down, resulting in guns feeling tighter. This also reduces the stuttering feeling A15 had when mouse looking.
+Clearer message for “unable to repair.
+All stations found at traders now have a rare chance to be in working condition.
+Calipers no longer drop in the game.
+Crafting steel ingots or bulletproof glass in a forge requires a crucible upgrade.
+The machete recipe is unlocked by a perk for better visibility.
+First aid kits are made in a chem station.
+First aid bandages heal more slowly.
+Altered the Taza’s Axe icon.
+The burning barrel is not craftable.
+Every Secret Stash perk level will improve the trader inventory.
+Crawler zombies will not appear in scout or feral hordes.
+Claim stones require forged iron, not steel.
+Increased temperature insulation and armor on Animal hide clothing
+Removed calipers from the game.
+Removed spotlights from random construction loot crates.
+Iron tools drain more stamina than stone tools. This can easily be covered with perks.
+Everyone can repair a machete but only expert weaponsmiths can craft new ones.
+A machete is a steel weapon.
+Game Unsticks player to the surface when underground
+Allow for case insensitive item name passed to giveself
+Increased probability for finding silver/gold/diamond.
+Making glue does not require a beaker.
+The bio fuel item has been removed.
+Crafting sod is cheaper.
+“<player> has joined the game” chat message is shown when the player is really in the world
+Default day length to 60 minutes, day light to 18 hours
+Added stamina mod to the Bad Mechanic perk.
+Switched back to OS cursor
+Increased stack size on iron darts.
+Cap overdamage on block harvest
+Better wording for the food healing message.
 Fixed
 
 Running shoes can be scrapped
