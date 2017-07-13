@@ -771,7 +771,19 @@ Decoration Replacing Light Pole Base in Nav a tp -1660 61 772
 Fixed: Added burnt biome reference to the farming journal entry.
 Fixed: Workstation journal entries: added info on items having to be in your inventory
 Fixed: Audio clips not stopping upon leaving a game
-Fixed: SDTD-6556 Audioloop possible on auto fire tools/weapons – when emptying a clip with no ammo
+Fixed: Audioloop possible on auto fire tools/weapons – when emptying a clip with no ammo
+woodHalf has no vendor price set.
+Allow shift clicking fuel in workstation.
+Model error on harvestable potato plant.
+Duke token amount is not updating correctly.
+Wrong fall event on some doors and hatches.
+Broken wooden bow gets stuck in zoom position.
+Hitting any trader with a torch and setting them on fire awards player kills.
+First Person Muzzle Flashes are out too far from the barrel at different FOV’s
+Workstations output goes to first free slot – ignoring existing stacks.
+Zombie corpses are not being cleaned up in unloaded chunks.
+Player Editor has invalid character selections available.
+It seems like it rains way too much in game.A rainy time slot is selected by the server each day now. It can only rain during these selected hours IF it is cloudy and a rainy weather dice is rolled. This possible rainy time can range from 8-12 hours per day and it can never rain outside those hours except on 7th days.
 Game settings, command line, command console
 
 Allow overriding the Steam language with the “-language=” command line argument
