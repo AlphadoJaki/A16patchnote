@@ -42,6 +42,7 @@ Zombies at locations are persistent meaning if you entered an area killed 1 of 5
 Zombies will respawn in their volume if the volume has never been cleared or nobody has visited it in 5 days
 Sleeper zombies have a chance to be a decoy meaning they are already dead. We added this so we could remove the old corpse loot block. Note: you have to damage them first before you can loot them.
 Decoy zombies have a chance to not be dead so you can be surprised sometimes
+Gamestage increases much faster on higher difficulty levels making zombies big, bad, and bountiful.
 Screamer Hordes
 We’ve changed screamer hordes to use gamestages now so they will be dynamically set to the offending parties game stage
 
@@ -158,6 +159,7 @@ Zombie Vultures – The undead have taken to the skies! These nearly relentless 
 Rattlesnakes – Rattlesnakes are fairly defensive reptiles but will strike and defend their territory if you get too close to them.
 Added: Wandering vulture hordes, wolves, and wolf packs
 We’ve also redone collision and ragdoll on all animals for better combat and more believable deaths.
+Replaced pigs with wild boars. They attack if provoked.
 Painting
 Use a paint brush and paint to give your base a custom look. Focus on any paintable block and use the secondary action to paint a surface and the primary action to erase the paint from a surface. Hold the reload key to see additional painting features and change the desired paint color. Unlock additional paint groups by finding and reading painting books. Many new textures have been added to use for painting.
 
